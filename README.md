@@ -6,6 +6,18 @@
 
 A module for creating random bytes and numbers used in [Vapor](https://github.com/vapor/vapor)'s packages.
 
+## Usage
+
+```swift
+import Random
+
+let bytes = try URandom.bytes(count: 5)
+print(bytes.string)
+
+let int = try OSRandom.int()
+print(int)
+```
+
 ## 📖 Documentation
 
 Visit the Vapor web framework's [documentation](http://docs.vapor.codes) for instructions on how to use this package. 
