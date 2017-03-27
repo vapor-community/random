@@ -19,7 +19,7 @@ class RandomTests: XCTestCase {
         let rand = try OSRandom.makeInt64()
         print(rand)
         let bytes = try OSRandom.bytes(count: 32)
-        print(bytes.string)
+        print(bytes.makeString())
     }
 
     func testURandomCount() throws {
