@@ -14,7 +14,7 @@ import Random
 let bytes = try URandom.bytes(count: 5)
 print(bytes.string)
 
-let int = try OSRandom.int()
+let int = try OSRandom.makeInt()
 print(int)
 ```
 
