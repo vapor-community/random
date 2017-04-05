@@ -38,8 +38,9 @@ class RandomTests: XCTestCase {
         let array = [1, 2, 3]
         var results: [Int: Int] = [:]
         for _ in 0..<65_536 {
-            let foo = array.random
-            results[foo] = (results[foo] ?? 0) + 1
+            if let foo = array.random {
+                results[foo] = (results[foo] ?? 0) + 1
+            }
         }
         print(results)
     }
