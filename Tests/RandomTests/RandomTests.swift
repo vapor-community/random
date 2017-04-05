@@ -33,4 +33,14 @@ class RandomTests: XCTestCase {
         let zeros = Bytes(repeating: 0, count: 8)
         XCTAssertNotEqual(tail, zeros)
     }
+    
+    func testArray() throws {
+        let array = [1, 2, 3]
+        var results: [Int: Int] = [:]
+        for _ in 0..<65_536 {
+            let foo = array.random
+            results[foo] = (results[foo] ?? 0) + 1
+        }
+        print(results)
+    }
 }
