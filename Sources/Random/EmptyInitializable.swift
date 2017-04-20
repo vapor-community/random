@@ -1,6 +1,4 @@
-public protocol EmptyInitializable {
-    init() throws
-}
+import Core
 
 // MARK: - Throwing static methods
 extension RandomProtocol where Self: EmptyInitializable {
