@@ -1,31 +1,20 @@
-# Random
-
-![Swift](http://img.shields.io/badge/swift-3.1-brightgreen.svg)
-[![CircleCI](https://circleci.com/gh/vapor/random.svg?style=shield)](https://circleci.com/gh/vapor/random)
-[![Slack Status](http://vapor.team/badge.svg)](http://vapor.team)
-
-A module for creating random bytes and numbers used in [Vapor](https://github.com/vapor/vapor)'s packages.
-
-## Usage
-
-```swift
-import Random
-
-let bytes = try URandom.bytes(count: 5)
-print(bytes.string)
-
-let int = try OSRandom.makeInt()
-print(int)
-```
-
-## 📖 Documentation
-
-Visit the Vapor web framework's [documentation](http://docs.vapor.codes) for instructions on how to use this package. 
-
-## 💧 Community
-
-Join the welcoming community of fellow Vapor developers in [slack](http://vapor.team).
-
-## 🔧 Compatibility
-
-This package has been tested on macOS and Ubuntu.
+<p align="center">
+    <img src="https://cloud.githubusercontent.com/assets/1977704/25430215/13055fa8-2a7c-11e7-97fa-e3b3377cd3ce.png" width="320" alt="Random">
+    <br>
+    <br>
+    <a href="http://beta.docs.vapor.codes/random/package/">
+        <img src="http://img.shields.io/badge/read_the-docs-92A8D1.svg" alt="Documentation">
+    </a>
+    <a href="http://vapor.team">
+        <img src="http://vapor.team/badge.svg" alt="Slack Team">
+    </a>
+    <a href="LICENSE">
+        <img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT License">
+    </a>
+    <a href="https://circleci.com/gh/vapor/random">
+        <img src="https://circleci.com/gh/vapor/random.svg?style=shield" alt="Continuous Integration">
+    </a>
+    <a href="https://swift.org">
+        <img src="http://img.shields.io/badge/swift-3.1-brightgreen.svg" alt="Swift 3.1">
+    </a>
+</center>
