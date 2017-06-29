@@ -41,7 +41,7 @@ private func makeRandom(min: Int, max: Int) -> Int {
     let top = max - min + 1
     #if os(Linux)
         // will always be initialized
-        guard Int.randomInitialized else { fatalError() }
+        guard randomInitialized else { fatalError() }
         return Int(libc.random() % top) + min
     #else
         return Int(arc4random_uniform(UInt32(top))) + min
