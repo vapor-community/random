@@ -37,7 +37,7 @@ extension Int {
     }()
 #endif
 
-private func makeRandom(min: Int, max: Int) -> Int {
+public func makeRandom(min: Int, max: Int) -> Int {
     let top = max - min + 1
     #if os(Linux)
         // will always be initialized
