@@ -1,3 +1,4 @@
+import Bits
 import libc
 
 /// URandom represents a file connection to /dev/urandom on Unix systems.

@@ -1,6 +1,7 @@
-import XCTest
+import Bits
 import Core
-@testable import Random
+import XCTest
+import Random
 
 class RandomTests: XCTestCase {
     static var allTests = [

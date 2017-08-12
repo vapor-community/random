@@ -1,3 +1,5 @@
+import Bits
+
 public protocol RandomProtocol {
     /// Get a random array of Bytes
     func bytes(count: Int) throws -> Bytes
